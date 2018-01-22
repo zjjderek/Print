@@ -1,0 +1,172 @@
+﻿body {
+    font-family: 'Microsoft YaHei', Arial;
+    font-size: 12px;
+    margin: 0;
+}
+#lgFrame {
+    margin: 0 auto;
+}
+#top {    
+    height: 100px;
+    min-width: 1200px;
+    vertical-align: middle;  
+}
+#logo {
+    padding: 10px 10px 0 60px;    
+    float: left;    
+}
+#imgLogo {
+    height: 46px;
+    margin: 0 20px;
+}
+
+#lgTitle {
+    text-align: left;
+    padding-top: 40px;
+    float: left;
+    width: 44%;
+    font-family: "Microsoft YaHei", "SimHei",Arial;
+    text-shadow: 2px 2px 5px rgba(20, 20, 20, 0.5);
+    font-size: 40px;
+    color: #404040;
+}
+#lgSubTitle {
+    float: right;
+    font-family: Arial;
+    font-size :12px;
+    padding-top:82px;
+    padding-right:40px;
+}
+#lgTitle:hover {    
+    color: #000;
+}
+#mid {
+    background-image: url('lgbk.gif');   
+    padding-top:80px;
+    padding-bottom:80px;
+    min-width: 1200px;
+}
+#footer {
+    text-align: center;
+    padding-top: 5px;
+}
+#lgImg {
+    color: #000;		/* 文本标签颜色 */
+    text-shadow: 1px 1px 2px #99C;
+    margin: 0 auto;
+    width: 500px;		/* 背景大小 */
+    height: 320px;
+    background-image: url('logImg.PNG');
+    font-size:14px;
+    vertical-align: middle;
+    text-align:left;
+    box-shadow: 0px 0px 15px #000;
+    position: relative;
+}
+a.webLink {
+    color: #808080;
+    text-decoration: none;
+}
+a.webLink:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.cr {
+    color: #666;
+    font-size: 12px;
+}
+/* input div */
+#divUsr {
+    padding-top: 216px;		/* 用户名左边距、高度 */
+    padding-left: 155px;
+}
+#divPswd {
+    padding-top: 2px;		/* 密码左边距、高度 */
+    padding-left: 169px;
+}
+#divRemb {
+    position: absolute;
+    top: 250px;
+    left: 330px;
+}
+#divBtn {
+    padding-top: 5px; /* 按钮左边距、高度 */
+    padding-left: 220px;
+}   
+
+.lbName {    
+    color:#33F;			/* 用户名提示颜色 */
+    padding-left: 10px;
+    /*width: 30px;*/
+    height: 19px;
+    line-height: 19px;
+    display: inline-block;
+    border:none;
+    background:none transparent;
+}
+/* edit & button */
+#usrname
+{ 
+    color: #22A;		/* 用户名颜色 */
+    padding-left: 22px;
+    width: 68px;
+    margin: 5px 0px 5px 10px;
+    background:none transparent; /*at first*/
+    background-image: url('usr.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+    border:none;
+    border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #ACA; 
+}
+
+#pswd
+{
+    color: #22A;		/* 密码颜色 */
+    width: 68px;
+    margin: 5px 0px 5px 10px;
+    padding-left: 22px;
+    background:none transparent;
+    background-image:url("pswd.gif");
+    background-repeat:no-repeat; 
+    background-position:left;    
+    border:none;    
+    border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #ACA; 
+    -webkit-input-placeholder: #DDD;
+    -moz-placeholder:#DDD;
+}
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #CCC; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #CCC; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #CCC; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #CCC; 
+}
+
+
+.ClearLink {
+    color: #848484;
+    font-family: verdana;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+.ClearLink:hover {
+    text-shadow:0 0 3px #999;
+}
+
+.mid {
+    text-align: center!important;
+}
+.right {
+    text-align: right!important;
+}
+.mr40 {margin-right: 40px;
+}
+
+#lkbLogout:hover {
+    color: #FF5722;
+}

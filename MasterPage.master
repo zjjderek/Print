@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- 头部 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link href="images/Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="layui-layout-body">
+<form runat="server"> 
+    <!-- 顶部导航 -->
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-header layui-bg-cyan">
+        <div class="layui-logo"><img id="imgLogo" alt="" src="images/logo-w.png" /></div>
+    
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item layui-nav-title">物资出库管理平台</li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+          <li class="layui-nav-item">
+              <a href="">系统设置</a>
+              <dl class="layui-nav-child">
+                <dd><a href="">用户信息</a></dd>
+                <dd><a href="">修改密码</a></dd>
+             </dl>
+          </li>
+          <li class="layui-nav-item">
+              <asp:LinkButton ID="lkbLogout" ToolTip="点击退出" runat="server" OnClick="lkbLogout_Click">点击退出</asp:LinkButton>
+          </li>
+        </ul>
+      </div>
+  
+        <!-- 内容填充区域 -->    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+   
+        <!-- 底部固定区域 -->
+        <div class="layui-footer mid">   
+        <span class="cr"> 中国联通张家界市分公司 © 1998-2018 By：<a class="ClearLink" href="mailto:15607444955@wo.cn">Derek.Hsu</a></span>
+        </div>
+    </div>
+<script src="layui/layui.js"></script>
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;  
+});
+</script>
+</form>
+</body>
+</html>
